@@ -1,6 +1,6 @@
 fn main() {
     println!("Hello, world!");
-    // Following four entries controls DNS server probes will be sent trough.
+    // Following four entries controls DNS server probe will be sent trough.
     let regkeyv4 = Hive::LocalMachine.open(r"SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet\ActiveProbeContent", Security::Read)?;
     let regkeyv6 = Hive::LocalMachine.open(r"SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet\ActiveProbeContentV6", Security::Read)?;
     let regkeyv4_ip = "127.0.0.1"; // Ensure that you have dnscrypt proxy installed and running.
