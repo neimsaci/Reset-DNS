@@ -4,7 +4,6 @@ version = "0.1.0"
 edition = "2021"
 authors = ["a.k.a neimsaci https://neimsaci.info <mail_me@neimsaci.info>"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 rsdns = "0.13.0"
+registry = "1.2.2"
