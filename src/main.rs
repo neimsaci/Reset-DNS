@@ -17,7 +17,7 @@ fn main() {
     // Following four entries controls Host where testfile 'connecttest.txt' will be downloaded from.
     let regkeyv4_active_web_probe_host = Hive::LocalMachine.open(r"SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet\ActiveProbeContent", Security::Read)?;
     let regkeyv6_active_web_probe_host = Hive::LocalMachine.open(r"SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet\ActiveProbeContentV6", Security::Read)?;
-    let regkeyv4_web_probe_host = "www.github.com/neimsaci/neimsaci.github.io/" // Repo where 'connecttest.txt' is located.
-    let regkeyv6_web_probe_host = "www.github.com/neimsaci/neimsaci.github.io/" // Same as above.
+    let regkeyv4_web_probe_host = "www.github.com/neimsaci/Reset-DNS/" // Repo where 'connecttest.txt' is located.
+    let regkeyv6_web_probe_host = "www.github.com/neimsaci/Reset-DNS/" // Same as above.
     //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 }
