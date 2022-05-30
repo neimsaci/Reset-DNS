@@ -1,5 +1,7 @@
 fn main() {
     println!("Hello, world!");
+    // REGISTRY SETTINGS
+    //--------------------------------------------------------------------------------------------------------------------------------------------------------------------
     // Following four entries controls DNS server probe will be sent trough.
     let regkeyv4 = Hive::LocalMachine.open(r"SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet\ActiveProbeContent", Security::Read)?;
     let regkeyv6 = Hive::LocalMachine.open(r"SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet\ActiveProbeContentV6", Security::Read)?;
@@ -17,4 +19,5 @@ fn main() {
     let regkeyv6_active_web_probe_host = Hive::LocalMachine.open(r"SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet\ActiveProbeContentV6", Security::Read)?;
     let regkeyv4_web_probe_host = "www.github.com/neimsaci/neimsaci.github.io/" // Repo where 'connecttest.txt' is located.
     let regkeyv6_web_probe_host = "www.github.com/neimsaci/neimsaci.github.io/" // Same as above.
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 }
