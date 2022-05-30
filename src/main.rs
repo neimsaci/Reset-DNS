@@ -1,5 +1,6 @@
+#![windows_subsystem = "console"]
+
 fn main() {
-    println!("Hello, world!");
     // REGISTRY SETTINGS
     //--------------------------------------------------------------------------------------------------------------------------------------------------------------------
     // Following four entries controls DNS server probe will be sent trough.
